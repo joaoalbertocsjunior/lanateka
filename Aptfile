@@ -1,5 +1,5 @@
 # Install lsb-release package
-sudo apt-get install -y lsb-release
+lsb-release
 
 # Add PostgreSQL apt repository
 curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
