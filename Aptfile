@@ -6,8 +6,6 @@ curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo t
 echo "deb [signed-by=/etc/apt/trusted.gpg.d/pgdg.asc] http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
 
 # Install required packages
-sudo
-build-essential
 libatk1.0-0
 libatk-bridge2.0-0
 libdrm2
