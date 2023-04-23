@@ -10,6 +10,7 @@ const validOptionCondition = (params) => {
     messageToInt = StringToInt(msg.body);
     if (data?.menu) {
         menuScope = GetScope(script, data.menu);
+        console.log(menuScope, data.menu);
         scopeOptionsSize = menuScope.options.length;
     } else {
         scopeOptionsSize = undefined;
