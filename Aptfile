@@ -1,3 +1,10 @@
+# Remove old key from trusted.gpg
+/etc/apt/trusted.gpg.d/jammy-pgdg.gpg
+# Add new key to signed-by directory
+curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - && \
+echo "deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+
+# Install required packages
 libatk1.0-0
 libatk-bridge2.0-0
 libdrm2
