@@ -13,7 +13,7 @@ const Script = (data) => {
         keywords: [
             "menu"
         ],
-        menuStartText: "Bem-vindo a *Camargo Diegues Advogados*\nEscolha uma das seguintes opções:\n\n",
+        menuStartText: "Bem-vindo a\n*Camargo Diegues Advogados*\nEscolha uma das seguintes opções:\n\n",
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
