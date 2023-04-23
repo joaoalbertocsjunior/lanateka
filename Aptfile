@@ -1,11 +1,7 @@
-# Install lsb-release package
-lsb-release
-
-# Add PostgreSQL apt repository
-curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
-
-# Install required packages
+libcurl4-openssl-dev
+build-essential
+libpq-dev
+nodejs
 libatk1.0-0
 libatk-bridge2.0-0
 libdrm2
