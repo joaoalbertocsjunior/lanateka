@@ -1,0 +1,41 @@
+{
+  "name": "zapzap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node start.js",
+    "start": "node start.js"
+  },
+  "engines": {
+    "node": ">=19.7.0",
+    "npm": ">=9.6.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bson": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "encodeurl": "^1.0.2",
+    "express": "^4.18.2",
+    "fast-csv": "^4.3.6",
+    "fixie": "^0.0.1",
+    "mongoose": "^7.0.0",
+    "mongoose-encryption": "^2.1.2",
+    "npx": "^10.2.2",
+    "puppeteer-core": "^19.7.2",
+    "qrcode": "^1.5.1",
+    "safe-regex": "^2.1.1",
+    "socket.io": "^4.6.1",
+    "throng": "^5.0.0",
+    "turl": "^1.1.2",
+    "type-component": "^0.0.1",
+    "validar-cpf": "^2.1.2",
+    "validator": "^13.9.0",
+    "whatsapp-web.js": "^1.19.4",
+    "wwebjs-mongo": "^1.1.0",
+    "xlsx": "^0.18.5",
+    "xlsx-js-style": "^1.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+heroku buildpacks:add --index 1 heroku-community/apt
+heroku buildpacks:add --index 2 heroku/nodejs
+heroku ps:scale web=1
+
+
+
+git commit --allow-empty -m "empty commit"
+git push heroku master
+
+heroku config:set FIXIE_URL=<your Fixie URL>
+heroku config:set FIXIE_AUTH=<your Fixie authentication credentials>
+heroku config:set MONGODB_URI=<your Atlas DB connection string>
+
+https://devcenter.heroku.com/articles/node-concurrency

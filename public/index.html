@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp QR Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        #center {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="center">
+        <h1>Connect using WhatsApp QR Code Reader</h1>
+        <h4>QR don't work? Try reloading the page!</h4>
+        <div id="qrCode"></div>
+        <h3 id="linkLabel">Link to invite user will be generated.</h3>
+        <h4 id="link"><a id="qrLink" target="_blank"></a></h4>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const qrCodeEl = document.getElementById('qrCode');
+        const qrLinkEl = document.getElementById('qrLink');
+        const linkLabel = document.getElementById('linkLabel');
+
+        socket.on('qr', (url) => {
+            qrCodeEl.innerHTML = `<img src="${url}" alt="QR Code" id="qrCodeImage"/>`;
+        });
+
+        socket.on('link', (url) => {
+            linkLabel.innerHTML = 'This is your link to invite users:'
+            qrLinkEl.innerHTML = url;
+            qrLinkEl.setAttribute('href', url);
+        });
+
+        socket.on('ready', () => {
+            console.log('Client is ready!');
+        });
+    </script>
+</body>
+
+</html>
