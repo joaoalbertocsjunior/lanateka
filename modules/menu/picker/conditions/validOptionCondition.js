@@ -8,9 +8,8 @@ const validOptionCondition = (params) => {
     let result;
     let messageToInt, menuScope, scopeOptionsSize;
     messageToInt = StringToInt(msg.body);
-    if (data?.menu) {
+    if (data?.menu) { // need new script exception
         menuScope = GetScope(script, data.menu);
-        console.log(menuScope, data.menu);
         scopeOptionsSize = menuScope.options.length;
     } else {
         scopeOptionsSize = undefined;
