@@ -1,14 +1,4 @@
-# Use Ubuntu Bionic package sources
-echo "deb http://archive.ubuntu.com/ubuntu bionic main" >> /etc/apt/sources.list
-echo "deb http://archive.ubuntu.com/ubuntu bionic-updates main" >> /etc/apt/sources.list
-
-# Update package list
-apt-get update
-
-# Install required packages
-apt-get install -y libatk1.0-0
-
-#libatk1.0-0
+libatk1.0-0
 libatk-bridge2.0-0
 libdrm2
 libxkbcommon0
