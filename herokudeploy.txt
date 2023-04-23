@@ -2,7 +2,9 @@ heroku buildpacks:add --index 1 heroku-community/apt
 heroku buildpacks:add --index 2 heroku/nodejs
 heroku ps:scale web=1
 
+heroku buildpacks:add jontewks/puppeteer
 
+heroku run bash
 
 git commit --allow-empty -m "empty commit"
 git push heroku master
