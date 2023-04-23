@@ -1,7 +1,3 @@
-libcurl4-openssl-dev
-build-essential
-libpq-dev
-nodejs
 libatk1.0-0
 libatk-bridge2.0-0
 libdrm2
