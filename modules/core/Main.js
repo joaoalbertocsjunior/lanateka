@@ -15,6 +15,8 @@ const NormalizeInput = require("../menu/helpers/parsers/NormalizeInput.js");
 
 const TimestampHasReachBreakpoint = require('../menu/helpers/misc/TimestampHasReachBreakpoint.js');
 
+const { disconnect } = require('../../database/connection/connection.js');
+
 const ScriptLoader = require('../menu/helpers/core/ScriptLoader.js');
 
 const QueryObject = require('../../database/QueryObject.js');
@@ -151,6 +153,10 @@ const Main = (client, io, serverPath, filePath) => { // serverPath and filePath 
                 })
                 .catch((err) => { console.log(err); });
             processing = false;
+            // disconnect();
+            await disconnect().then(() => {
+                console.log('Database connection closed.');
+            }).catch((err) => { console.log(err) });
         }
         client.once('message', (msg) => { handleMessage(msg) });
     };

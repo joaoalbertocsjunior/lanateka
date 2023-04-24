@@ -31,7 +31,17 @@ const connection = async () => {
 };
 
 const disconnect = async () => {
-    await mongoose.disconnect();
+    // await mongoose.disconnect();
+    // await mongoose.connection.close();
+    return new Promise((resolve, reject) => {
+        mongoose.connection.close((err) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve();
+            }
+        });
+    });
 };
 
 module.exports = { connection, disconnect };

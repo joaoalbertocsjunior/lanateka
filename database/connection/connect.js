@@ -10,12 +10,12 @@ const connect = async (configuration) => {
                     // console.log('Connected to MongoDB database');
                     return Promise.resolve(model[operation](...queryParams))
                         .then((result) => {
-                            disconnect();
+                            // disconnect();
                             resolve(result);
                         })
                         .catch((error) => {
                             // console.error('Error performing database operation:', error);
-                            disconnect();
+                            // disconnect();
                             reject(error);
                         });
                 } else {
@@ -23,12 +23,12 @@ const connect = async (configuration) => {
                         // console.log('Connected to MongoDB database');
                         return Promise.resolve(model[operation](...queryParams))
                             .then((result) => {
-                                disconnect();
+                                // disconnect();
                                 resolve(result);
                             })
                             .catch((error) => {
                                 console.error('Error performing database operation:', error);
-                                disconnect();
+                                // disconnect();
                                 reject(error);
                             });
                     });
