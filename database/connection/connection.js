@@ -1,6 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
+const util = require('util');
 const fixieHelper = require('./helpers/fixie.js');
 const env = process.env;
 // let mongo = mongoose.set('debug', true);
@@ -33,15 +34,7 @@ const connection = async () => {
 const disconnect = async () => {
     // await mongoose.disconnect();
     // await mongoose.connection.close();
-    return new Promise((resolve, reject) => {
-        mongoose.connection.close((err) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve();
-            }
-        });
-    });
+    return util.promisify(mongoose.connection.close.bind(mongoose.connection));
 };
 
 module.exports = { connection, disconnect };
