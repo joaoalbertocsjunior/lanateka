@@ -32,8 +32,6 @@ const connection = async () => {
 };
 
 const disconnect = async () => {
-    // await mongoose.disconnect();
-    // await mongoose.connection.close();
     return util.promisify(mongoose.connection.close.bind(mongoose.connection));
 };
 
