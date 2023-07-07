@@ -17,7 +17,7 @@ const Script = (data) => {
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
-                menuOption: "Sobre a ♻️ *@lanateka*. 🧘🏾‍♀️",
+                menuOption: "Sobre a *@lanateka*. 🧘🏾‍♀️",
                 info: `Informações sobre Tópico 1.`
             },
             {
@@ -29,7 +29,7 @@ const Script = (data) => {
                 info: `Informações sobre Tópico 3.`
             },
             {
-                menuOption: "Midias Sociais e Canais de Atendimento.",
+                menuOption: "Nossos trabalhos. 📐",
                 info: `Você pode encontrar nossas Midias Socias e nossos Canais de Atendimento aqui:\n`
                     + `\n`
                     + `https://linktr.ee/[seulinktree]`
