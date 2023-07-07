@@ -13,16 +13,20 @@ const Script = (data) => {
         keywords: [
             "menu"
         ],
-        menuStartText: "Bem-vindo ao canal de atendimento \n*Hbbeer* 🍻\nEscolha uma das seguintes opções:\n\n",
+        menuStartText: "Bem-vindo a\n*LiderEco* ♻️\nEscolha uma das seguintes opções:\n\n",
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
-                menuOption: "Informações sobre *Hbbeer*.",
+                menuOption: "Sobre a ♻️ *LiderEco*.",
                 info: `Informações sobre Tópico 1.`
             },
             {
-                menuOption: "Quero contratar! 🎉",
-                info: `Por favor, deixe sua mensagem e informe um dia e horário.\nFaremos o melhor para atendê-lo nesse período.`
+                menuOption: "Quem Somos? 🧑🏽‍🔧",
+                info: `Informações sobre Tópico 2.`
+            },
+            {
+                menuOption: "Falar com um atendente. 👩🏽",
+                info: `Informações sobre Tópico 3.`
             },
             {
                 menuOption: "Midias Sociais e Canais de Atendimento.",
