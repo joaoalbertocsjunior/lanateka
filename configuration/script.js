@@ -13,19 +13,19 @@ const Script = (data) => {
         keywords: [
             "menu"
         ],
-        menuStartText: "Bem-vindo a\n*LiderEco* ♻️\nEscolha uma das seguintes opções:\n\n",
+        menuStartText: "Bem-vindo ao atendende virtual\n*@lanateka* 🏡\nEscolha uma das seguintes opções:\n\n",
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
-                menuOption: "Sobre a ♻️ *LiderEco*.",
+                menuOption: "Sobre a ♻️ *@lanateka*. 🧘🏾‍♀️",
                 info: `Informações sobre Tópico 1.`
             },
             {
-                menuOption: "Quem Somos? 🧑🏽‍🔧",
+                menuOption: "Quem Somos? 👱🏼‍♀️👧🏼",
                 info: `Informações sobre Tópico 2.`
             },
             {
-                menuOption: "Falar com um atendente. 👩🏽",
+                menuOption: "Vamos marcar um horario. 🛋",
                 info: `Informações sobre Tópico 3.`
             },
             {
