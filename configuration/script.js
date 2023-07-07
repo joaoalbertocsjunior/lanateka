@@ -13,23 +13,19 @@ const Script = (data) => {
         keywords: [
             "menu"
         ],
-        menuStartText: "Bem-vindo a\n ♻️ *LiderEco*\nEscolha uma das seguintes opções:\n\n",
+        menuStartText: "Bem-vindo ao canal de atendimento \n*Hbbeer* 🍻\nEscolha uma das seguintes opções:\n\n",
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
-                menuOption: "Sobre a ♻️ *LiderEco*.",
+                menuOption: "Informações sobre *Hbbeer*.",
                 info: `Informações sobre Tópico 1.`
             },
             {
-                menuOption: "Quem Somos? 🧑🏽‍🔧",
-                info: `Informações sobre Tópico 2.`
+                menuOption: "Quero contratar! 🎉",
+                info: `Por favor, deixe sua mensagem e informe um dia e horário.\nFaremos o melhor para atendê-lo nesse período.`
             },
             {
-                menuOption: "Falar com um atendente. 👩🏽",
-                info: `Informações sobre Tópico 3.`
-            },
-            {
-                menuOption: "Midias Sociais e Canais de Atendimento. 📬",
+                menuOption: "Midias Sociais e Canais de Atendimento.",
                 info: `Você pode encontrar nossas Midias Socias e nossos Canais de Atendimento aqui:\n`
                     + `\n`
                     + `https://linktr.ee/[seulinktree]`
