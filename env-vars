@@ -1,0 +1,11 @@
+CONTAINER_NAME="testzaza_container"
+IMAGE_NAME="testzaza"
+HOST_PORT=3000
+CONTAINER_PORT=3000
+NETWORK_NAME="your-network-name"
+CONTAINER_IP="10.5.0.2"
+MEMORY_LIMIT="1g"
+CPU_LIMIT="2"
+HOST_X11_SOCKET="/tmp/.X11-unix"
+CONTAINER_X11_SOCKET="/tmp/.X11-unix"
+

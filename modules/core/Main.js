@@ -12,6 +12,7 @@ const turl = require('turl');
 const GenerateUrl = require("../menu/helpers/misc/GenerateUrl");
 
 const NormalizeInput = require("../menu/helpers/parsers/NormalizeInput.js");
+const removeEmojis = require('../menu/helpers/parsers/removeEmojis.js');
 
 const TimestampHasReachBreakpoint = require('../menu/helpers/misc/TimestampHasReachBreakpoint.js');
 
@@ -50,7 +51,8 @@ const Main = (client, io, serverPath, filePath) => { // serverPath and filePath 
             processing = true;
             await msg.getContact()
                 .then(async (contact) => {
-                    let message = encodeURIComponent(msg.body);
+                    let message = removeEmojis(msg.body);
+                    message = encodeURIComponent(message);
                     const chat = await msg.getChat();
                     const id = chat.id._serialized;
                     let serverMessages = [];
@@ -146,7 +148,12 @@ const Main = (client, io, serverPath, filePath) => { // serverPath and filePath 
                                                 console.log(err);
                                             }
                                         }
-                                    }).catch((err) => { console.log(err); });
+                                    }).catch((err) => {
+                                        console.log(err);
+                                        if (process.env.NODE_ENV === 'production') {
+                                            client.once('message', (msg) => { handleMessage(msg) });
+                                        }
+                                    });
                                 }).catch((err) => { console.log(err); });
                             }).catch((err) => { console.log(err); });
                         }).catch((err) => { console.log(err); });

@@ -8,6 +8,7 @@ class WhatsAppClient {
             return WhatsAppClient.instance;
         };
         const clientConfiguration = {
+            qrRefreshIntervalMs: 30000,
             puppeteer: {
                 headless: true,
                 args: [

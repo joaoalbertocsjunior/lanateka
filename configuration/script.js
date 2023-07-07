@@ -13,23 +13,23 @@ const Script = (data) => {
         keywords: [
             "menu"
         ],
-        menuStartText: "Bem-vindo a\n*Camargo Diegues Advogados*\nEscolha uma das seguintes opções:\n\n",
+        menuStartText: "Bem-vindo a\n ♻️ *LiderEco*\nEscolha uma das seguintes opções:\n\n",
         menuEndText: `\nPara voltar ao menu principal a qualquer momento digite a palavra *menu*.\nDigite *voltar* para navegar para opção anterior.`,
         options: [
             {
-                menuOption: "Sobre o direito a saúde.",
+                menuOption: "Sobre a ♻️ *LiderEco*.",
                 info: `Informações sobre Tópico 1.`
             },
             {
-                menuOption: "Quem tem direito?",
+                menuOption: "Quem Somos? 🧑🏽‍🔧",
                 info: `Informações sobre Tópico 2.`
             },
             {
-                menuOption: "Quem somos?",
+                menuOption: "Falar com um atendente. 👩🏽",
                 info: `Informações sobre Tópico 3.`
             },
             {
-                menuOption: "Midias Sociais e Canais de Atendimento.",
+                menuOption: "Midias Sociais e Canais de Atendimento. 📬",
                 info: `Você pode encontrar nossas Midias Socias e nossos Canais de Atendimento aqui:\n`
                     + `\n`
                     + `https://linktr.ee/[seulinktree]`
@@ -53,7 +53,7 @@ const Script = (data) => {
                 ],
             },
             {
-                menuOption: "Quero entrar em contato!",
+                menuOption: "Quero ser parceiro ou colaborador!",
                 notification: `Deixe sua mensagem, responderemos assim que possível.`
             },
         ]
